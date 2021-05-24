@@ -1,13 +1,12 @@
 
-[![Travis-CI Build
-Status](https://travis-ci.org/hrbrmstr/wayback.svg?branch=master)](https://travis-ci.org/hrbrmstr/wayback)
-[![codecov](https://codecov.io/gh/hrbrmstr/wayback/branch/master/graph/badge.svg)](https://codecov.io/gh/hrbrmstr/wayback)
-[![Appveyor
-Status](https://ci.appveyor.com/api/projects/status/w9rwdf8a16t0amht/branch/master?svg=true)](https://ci.appveyor.com/project/hrbrmstr/wayback/branch/master)
-
 # wayback
 
 Tools to Work with Internet Archive Wayback Machine APIs
+
+**Update Peter Baumgartner 2021-05-24:** I have forked this repo for two reasons:
+
+- to learn from an experienced data scientist how to write an R client for a web API
+- to use it for some research questions (e.g., rankings of static site generators; development of r packages over time)
 
 ## Description
 
@@ -56,7 +55,7 @@ The following functions are implemented:
 ## Installation
 
 ``` r
-devtools::install_github("hrbrmstr/wayback")
+remotes::install_github("petzi53/wayback", build_vignettes = TRUE)
 ```
 
 ## Usage
