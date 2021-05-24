@@ -5,7 +5,7 @@ Encoding: UTF-8
 Date: 2021-05-24
 Authors@R: c(
     person("Bob", "Rudis", role = c("aut", "cre"), email = "bob@rud.is"),
-    person("Jonathan", "Carroll", email = "rpkg@jcarroll.com.au", role = c("ctb"))
+    person("Jonathan", "Carroll", email = "rpkg@jcarroll.com.au", role = c("ctb")),
     person("Peter", "Baumgartner", email = "petzi53@gmsil.com", role = c("ctb"))
   )
 Maintainer: Bob Rudis <bob@rud.is>
