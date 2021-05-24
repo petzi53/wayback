@@ -66,7 +66,7 @@ get_mementos <- function(url, timestamp = format(Sys.Date(), "%Y")) {
           ts <- anytime::anytime(ts)
         }
       }
-      tibble::data_frame(link = link, rel = rel, ts = ts)
+      tibble::tibble(link = link, rel = rel, ts = ts)
     })
 
 }
