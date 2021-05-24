@@ -23,8 +23,8 @@
 #'
 #' @md
 #' @param url Either an existing timemap URL or a plain resource URL
-#' @param seconds (default is `180`) This is an expensive operation for the Internet Archive
-#'     and it can take well-above this 3-minute setting for query results to be
+#' @param seconds (default is `300`) This is an expensive operation for the Internet Archive
+#'     and it can take well-above this 5-minute setting for query results to be
 #'     delivered. It's highly suggested you monitor your experience and adjust accordingly.
 #' @return data frame of mementos
 #' @note if a supplied resource has many entries, this call can take a while
@@ -44,7 +44,7 @@
 #' ## $ from     <chr> NA, "Tue, 20 Jun 2000 19:56:31 GMT", NA, NA, NA, NA, NA, NA, NA, NA...
 #' ## $ datetime <chr> NA, NA, NA, "Tue, 20 Jun 2000 19:56:31 GMT", "Wed, 16 Aug 2000 09:5...
 #' }
-get_timemap <- function(url, seconds = 180) {
+get_timemap <- function(url, seconds = 300) {
 
   if (length(url) > 1) {
     warning("More than one URL provided. Only using the first URL")
